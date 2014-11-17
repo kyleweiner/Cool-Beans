@@ -1,0 +1,1 @@
+../../../Bean-iOS-OSX-SDK/source/Categories/CBPeripheral+isConnected_Universal.h

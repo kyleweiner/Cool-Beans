@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6249" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6243"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TemperatureView" customModule="Cool_Beans" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="iN0-l3-epB" id="hnY-kG-3FS"/>
+                <outlet property="nameLabel" destination="Few-Xo-ADo" id="bhL-Aa-wpl"/>
+                <outlet property="temperatureLabel" destination="zB2-Z9-vva" id="hoz-Ai-gcI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Few-Xo-ADo">
+                    <rect key="frame" x="20" y="314" width="560" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="wwE-WL-jVI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="32"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wop-sx-hms">
+                    <rect key="frame" x="20" y="299" width="560" height="2"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="aKQ-or-tFv"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0℉" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zB2-Z9-vva" customClass="NumberLabel" customModule="Cool_Beans" customModuleProvider="target">
+                    <rect key="frame" x="157" y="174" width="286" height="129"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="129" id="HgJ-ik-UzP"/>
+                        <constraint firstAttribute="width" constant="286" id="rbD-gC-EGD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="112"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Few-Xo-ADo" firstAttribute="top" secondItem="Wop-sx-hms" secondAttribute="bottom" constant="13" id="KFU-p8-Xwj"/>
+                <constraint firstAttribute="trailing" secondItem="Few-Xo-ADo" secondAttribute="trailing" constant="20" id="QOh-L6-x7B"/>
+                <constraint firstItem="Few-Xo-ADo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="Ujl-1v-Nl5"/>
+                <constraint firstAttribute="centerX" secondItem="Wop-sx-hms" secondAttribute="centerX" id="a0S-TA-Bz5"/>
+                <constraint firstAttribute="trailing" secondItem="Wop-sx-hms" secondAttribute="trailing" constant="20" id="cfA-Mf-unM"/>
+                <constraint firstAttribute="centerY" secondItem="Wop-sx-hms" secondAttribute="centerY" id="fWp-sq-o3W"/>
+                <constraint firstAttribute="centerX" secondItem="zB2-Z9-vva" secondAttribute="centerX" id="g1i-zg-Hez"/>
+                <constraint firstItem="Wop-sx-hms" firstAttribute="top" secondItem="zB2-Z9-vva" secondAttribute="bottom" constant="-4" id="nRX-cu-BCv"/>
+                <constraint firstItem="Wop-sx-hms" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="xhL-Gq-h9l"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+</document>

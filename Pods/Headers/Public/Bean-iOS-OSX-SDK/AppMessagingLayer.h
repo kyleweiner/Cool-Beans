@@ -1,0 +1,1 @@
+../../../Bean-iOS-OSX-SDK/source/AppMessages/AppMessagingLayer.h

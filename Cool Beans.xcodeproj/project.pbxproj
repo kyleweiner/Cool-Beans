@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		022D08B21A1773E50009D9A5 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022D08B11A1773E50009D9A5 /* InfoViewController.swift */; };
+		02C27BF01A14927F00685D31 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C27BEF1A14927F00685D31 /* CustomColors.swift */; };
+		02C27BF71A15B97100685D31 /* TemperatureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02C27BF61A15B97100685D31 /* TemperatureView.xib */; };
+		02C27BF91A15C4DE00685D31 /* TemperatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C27BF81A15C4DE00685D31 /* TemperatureView.swift */; };
+		02C48A411A141B4D0015956F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C48A401A141B4D0015956F /* AppDelegate.swift */; };
+		02C48A461A141B4D0015956F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02C48A441A141B4D0015956F /* Main.storyboard */; };
+		02C48A481A141B4D0015956F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02C48A471A141B4D0015956F /* Images.xcassets */; };
+		02C48A4B1A141B4D0015956F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02C48A491A141B4D0015956F /* LaunchScreen.xib */; };
+		02C48A571A141B4D0015956F /* Cool_BeansTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C48A561A141B4D0015956F /* Cool_BeansTests.swift */; };
+		02D96FB41A16190B008CB5EE /* NumberLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D96FB31A16190B008CB5EE /* NumberLabel.swift */; };
+		02F74AE01A16F52B00E4DBB7 /* DisconnectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F74ADF1A16F52B00E4DBB7 /* DisconnectedViewController.swift */; };
+		02F74AE21A16F54600E4DBB7 /* ConnectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F74AE11A16F54600E4DBB7 /* ConnectedViewController.swift */; };
+		F6F766170DC03089EE95A3D6 /* libPods-Cool Beans.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17A1BBC4224A0E92FD7BE754 /* libPods-Cool Beans.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		02C48A511A141B4D0015956F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02C48A331A141B4D0015956F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02C48A3A1A141B4D0015956F;
+			remoteInfo = "Cool Beans";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		022D08B11A1773E50009D9A5 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		02C27BEB1A14875200685D31 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		02C27BEF1A14927F00685D31 /* CustomColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
+		02C27BF61A15B97100685D31 /* TemperatureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TemperatureView.xib; sourceTree = "<group>"; };
+		02C27BF81A15C4DE00685D31 /* TemperatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureView.swift; sourceTree = "<group>"; };
+		02C48A3B1A141B4D0015956F /* Cool Beans.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cool Beans.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		02C48A3F1A141B4D0015956F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02C48A401A141B4D0015956F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		02C48A451A141B4D0015956F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		02C48A471A141B4D0015956F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		02C48A4A1A141B4D0015956F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		02C48A501A141B4D0015956F /* Cool BeansTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cool BeansTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		02C48A551A141B4D0015956F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02C48A561A141B4D0015956F /* Cool_BeansTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cool_BeansTests.swift; sourceTree = "<group>"; };
+		02D96FB31A16190B008CB5EE /* NumberLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberLabel.swift; sourceTree = "<group>"; };
+		02F74ADF1A16F52B00E4DBB7 /* DisconnectedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisconnectedViewController.swift; sourceTree = "<group>"; };
+		02F74AE11A16F54600E4DBB7 /* ConnectedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectedViewController.swift; sourceTree = "<group>"; };
+		17A1BBC4224A0E92FD7BE754 /* libPods-Cool Beans.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Cool Beans.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		479240FFDBF77C40AE02328C /* Pods-Cool Beans.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cool Beans.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cool Beans/Pods-Cool Beans.debug.xcconfig"; sourceTree = "<group>"; };
+		754D10CDF1751A9F9197CCD4 /* Pods-Cool Beans.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cool Beans.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cool Beans/Pods-Cool Beans.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02C48A381A141B4D0015956F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6F766170DC03089EE95A3D6 /* libPods-Cool Beans.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02C48A4D1A141B4D0015956F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02C27BEE1A14927F00685D31 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				02C27BEF1A14927F00685D31 /* CustomColors.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		02C27BF51A15B97100685D31 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				02C27BF61A15B97100685D31 /* TemperatureView.xib */,
+				02C27BF81A15C4DE00685D31 /* TemperatureView.swift */,
+				02D96FB31A16190B008CB5EE /* NumberLabel.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		02C48A321A141B4D0015956F = {
+			isa = PBXGroup;
+			children = (
+				02C48A3D1A141B4D0015956F /* Cool Beans */,
+				02C48A531A141B4D0015956F /* Cool BeansTests */,
+				02C48A3C1A141B4D0015956F /* Products */,
+				EB009C4D85AFEF35E1485CC8 /* Pods */,
+				7EF3025742B8DB76E430330F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		02C48A3C1A141B4D0015956F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02C48A3B1A141B4D0015956F /* Cool Beans.app */,
+				02C48A501A141B4D0015956F /* Cool BeansTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		02C48A3D1A141B4D0015956F /* Cool Beans */ = {
+			isa = PBXGroup;
+			children = (
+				02C48A471A141B4D0015956F /* Images.xcassets */,
+				02C48A491A141B4D0015956F /* LaunchScreen.xib */,
+				02C48A441A141B4D0015956F /* Main.storyboard */,
+				02C27BF51A15B97100685D31 /* Views */,
+				02C48A621A141CB30015956F /* Controllers */,
+				02C27BEE1A14927F00685D31 /* Extensions */,
+				02C48A3E1A141B4D0015956F /* Supporting Files */,
+			);
+			path = "Cool Beans";
+			sourceTree = "<group>";
+		};
+		02C48A3E1A141B4D0015956F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				02C27BEB1A14875200685D31 /* Bridging-Header.h */,
+				02C48A401A141B4D0015956F /* AppDelegate.swift */,
+				02C48A3F1A141B4D0015956F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		02C48A531A141B4D0015956F /* Cool BeansTests */ = {
+			isa = PBXGroup;
+			children = (
+				02C48A561A141B4D0015956F /* Cool_BeansTests.swift */,
+				02C48A541A141B4D0015956F /* Supporting Files */,
+			);
+			path = "Cool BeansTests";
+			sourceTree = "<group>";
+		};
+		02C48A541A141B4D0015956F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				02C48A551A141B4D0015956F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		02C48A621A141CB30015956F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				02F74ADF1A16F52B00E4DBB7 /* DisconnectedViewController.swift */,
+				02F74AE11A16F54600E4DBB7 /* ConnectedViewController.swift */,
+				022D08B11A1773E50009D9A5 /* InfoViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7EF3025742B8DB76E430330F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17A1BBC4224A0E92FD7BE754 /* libPods-Cool Beans.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB009C4D85AFEF35E1485CC8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				479240FFDBF77C40AE02328C /* Pods-Cool Beans.debug.xcconfig */,
+				754D10CDF1751A9F9197CCD4 /* Pods-Cool Beans.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		02C48A3A1A141B4D0015956F /* Cool Beans */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02C48A5A1A141B4D0015956F /* Build configuration list for PBXNativeTarget "Cool Beans" */;
+			buildPhases = (
+				4A5999DC4D4D3DE31BFD037E /* Check Pods Manifest.lock */,
+				02C48A371A141B4D0015956F /* Sources */,
+				02C48A381A141B4D0015956F /* Frameworks */,
+				02C48A391A141B4D0015956F /* Resources */,
+				85333A64098D240CD6EBB165 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Cool Beans";
+			productName = "Cool Beans";
+			productReference = 02C48A3B1A141B4D0015956F /* Cool Beans.app */;
+			productType = "com.apple.product-type.application";
+		};
+		02C48A4F1A141B4D0015956F /* Cool BeansTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02C48A5D1A141B4D0015956F /* Build configuration list for PBXNativeTarget "Cool BeansTests" */;
+			buildPhases = (
+				02C48A4C1A141B4D0015956F /* Sources */,
+				02C48A4D1A141B4D0015956F /* Frameworks */,
+				02C48A4E1A141B4D0015956F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02C48A521A141B4D0015956F /* PBXTargetDependency */,
+			);
+			name = "Cool BeansTests";
+			productName = "Cool BeansTests";
+			productReference = 02C48A501A141B4D0015956F /* Cool BeansTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		02C48A331A141B4D0015956F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Kyle Weiner";
+				TargetAttributes = {
+					02C48A3A1A141B4D0015956F = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					02C48A4F1A141B4D0015956F = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 02C48A3A1A141B4D0015956F;
+					};
+				};
+			};
+			buildConfigurationList = 02C48A361A141B4D0015956F /* Build configuration list for PBXProject "Cool Beans" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 02C48A321A141B4D0015956F;
+			productRefGroup = 02C48A3C1A141B4D0015956F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				02C48A3A1A141B4D0015956F /* Cool Beans */,
+				02C48A4F1A141B4D0015956F /* Cool BeansTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		02C48A391A141B4D0015956F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02C48A461A141B4D0015956F /* Main.storyboard in Resources */,
+				02C27BF71A15B97100685D31 /* TemperatureView.xib in Resources */,
+				02C48A4B1A141B4D0015956F /* LaunchScreen.xib in Resources */,
+				02C48A481A141B4D0015956F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02C48A4E1A141B4D0015956F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4A5999DC4D4D3DE31BFD037E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		85333A64098D240CD6EBB165 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cool Beans/Pods-Cool Beans-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02C48A371A141B4D0015956F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02F74AE21A16F54600E4DBB7 /* ConnectedViewController.swift in Sources */,
+				02C27BF01A14927F00685D31 /* CustomColors.swift in Sources */,
+				02D96FB41A16190B008CB5EE /* NumberLabel.swift in Sources */,
+				022D08B21A1773E50009D9A5 /* InfoViewController.swift in Sources */,
+				02C27BF91A15C4DE00685D31 /* TemperatureView.swift in Sources */,
+				02C48A411A141B4D0015956F /* AppDelegate.swift in Sources */,
+				02F74AE01A16F52B00E4DBB7 /* DisconnectedViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02C48A4C1A141B4D0015956F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02C48A571A141B4D0015956F /* Cool_BeansTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		02C48A521A141B4D0015956F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02C48A3A1A141B4D0015956F /* Cool Beans */;
+			targetProxy = 02C48A511A141B4D0015956F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		02C48A441A141B4D0015956F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02C48A451A141B4D0015956F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		02C48A491A141B4D0015956F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02C48A4A1A141B4D0015956F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		02C48A581A141B4D0015956F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		02C48A591A141B4D0015956F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		02C48A5B1A141B4D0015956F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 479240FFDBF77C40AE02328C /* Pods-Cool Beans.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Cool Beans/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/kyleweiner/Desktop/Cool Beans/Cool Beans/Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		02C48A5C1A141B4D0015956F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 754D10CDF1751A9F9197CCD4 /* Pods-Cool Beans.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Cool Beans/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/kyleweiner/Desktop/Cool Beans/Cool Beans/Bridging-Header.h";
+			};
+			name = Release;
+		};
+		02C48A5E1A141B4D0015956F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Cool BeansTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cool Beans.app/Cool Beans";
+			};
+			name = Debug;
+		};
+		02C48A5F1A141B4D0015956F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Cool BeansTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cool Beans.app/Cool Beans";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02C48A361A141B4D0015956F /* Build configuration list for PBXProject "Cool Beans" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02C48A581A141B4D0015956F /* Debug */,
+				02C48A591A141B4D0015956F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02C48A5A1A141B4D0015956F /* Build configuration list for PBXNativeTarget "Cool Beans" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02C48A5B1A141B4D0015956F /* Debug */,
+				02C48A5C1A141B4D0015956F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02C48A5D1A141B4D0015956F /* Build configuration list for PBXNativeTarget "Cool BeansTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02C48A5E1A141B4D0015956F /* Debug */,
+				02C48A5F1A141B4D0015956F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 02C48A331A141B4D0015956F /* Project object */;
+}
