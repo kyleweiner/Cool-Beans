@@ -24,7 +24,7 @@ struct Temperature {
 
     func state() -> State {
         let fahrenheit = degressFahrenheit
-        switch (Int(fahrenheit)) {
+        switch Int(fahrenheit) {
             case let x where fahrenheit <= 39:
                 return .Cold
             case 40...65:
@@ -99,7 +99,7 @@ class ConnectedViewController: UIViewController, PTDBeanDelegate {
         // Update the background color.
         var backgroundColor: UIColor
 
-        switch (currentTemperature.state()) {
+        switch currentTemperature.state() {
             case .Unknown:
                 backgroundColor = .blackColor()
             case .Cold:
@@ -112,7 +112,7 @@ class ConnectedViewController: UIViewController, PTDBeanDelegate {
                 backgroundColor = .CBHotColor()
         }
 
-        UIView.animateWithDuration(0.4, animations: { () in
+        UIView.animateWithDuration(0.4, animations: {
             self.scrollView.backgroundColor = backgroundColor
             self.temperatureView.containerView.backgroundColor = backgroundColor
         })

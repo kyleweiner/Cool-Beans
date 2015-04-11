@@ -16,7 +16,7 @@ class DisconnectedViewController: UIViewController, PTDBeanManagerDelegate {
     var connectedBean: PTDBean? {
         didSet {
             if connectedBean == nil {
-                self.beanManagerDidUpdateState(manager)
+                beanManagerDidUpdateState(manager)
             } else {
                 performSegueWithIdentifier(connectedViewControllerSegueIdentifier, sender: self)
             }
@@ -87,7 +87,7 @@ class DisconnectedViewController: UIViewController, PTDBeanManagerDelegate {
         println("DISCONNECTED BEAN \nName: \(bean.name), UUID: \(bean.identifier) RSSI: \(bean.RSSI)")
 
         // Dismiss any modal view controllers.
-        presentedViewController?.dismissViewControllerAnimated(true, completion: { () in
+        presentedViewController?.dismissViewControllerAnimated(true, completion: {
             self.dismissViewControllerAnimated(true, completion: nil)
         })
 
