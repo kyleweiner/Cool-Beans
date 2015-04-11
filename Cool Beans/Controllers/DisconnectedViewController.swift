@@ -36,7 +36,7 @@ class DisconnectedViewController: UIViewController, PTDBeanManagerDelegate {
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == connectedViewControllerSegueIdentifier {
-            let vc = segue.destinationViewController as ConnectedViewController
+            let vc = segue.destinationViewController as! ConnectedViewController
             vc.connectedBean = connectedBean
             vc.connectedBean?.delegate = vc
         }

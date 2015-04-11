@@ -19,7 +19,7 @@ class TemperatureView: UIView {
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         let bundle = NSBundle(forClass: self.dynamicType)
-        self.addSubview(bundle.loadNibNamed("TemperatureView", owner: self, options: nil)[0] as UIView)
+        self.addSubview(bundle.loadNibNamed("TemperatureView", owner: self, options: nil)[0] as! UIView)
     }
 
 }
