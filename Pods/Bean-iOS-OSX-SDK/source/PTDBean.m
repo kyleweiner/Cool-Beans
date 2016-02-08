@@ -15,6 +15,7 @@
 #import "AppMessagingLayer.h"
 #import "NSData+CRC.h"
 #import "PTDBeanRadioConfig.h"
+#import "CBPeripheral+RSSI_Universal.h"
 
 #define DELAY_BEFORE_PROFILE_VALIDATION  0.5f
 #define PROFILE_VALIDATION_RETRY_TIMEOUT  10.0f
@@ -61,6 +62,15 @@ typedef enum { //These occur in sequence
 }
 
 #pragma mark - Public Methods
+
+- (BOOL)isEqual:(id)object {
+    return [object isKindOfClass:[self class]] ? [self isEqualToBean:object] : NO;
+}
+
+- (NSUInteger)hash {
+    return self.identifier.hash;
+}
+
 - (BOOL)isEqualToBean:(PTDBean *)bean {
     if([self.identifier isEqual:bean.identifier]){
         return YES;
@@ -87,8 +97,8 @@ typedef enum { //These occur in sequence
 -(NSNumber*)RSSI{
     NSNumber* returnedRSSI;
     if(_peripheral.state == CBPeripheralStateConnected
-    && [_peripheral RSSI]){
-        returnedRSSI = [_peripheral RSSI];
+    && [_peripheral RSSI_Universal]){
+        returnedRSSI = [_peripheral RSSI_Universal];
     }else{
         returnedRSSI = _RSSI;
     }
@@ -128,6 +138,10 @@ typedef enum { //These occur in sequence
 }
 
 #pragma mark SDK
+- (void)releaseSerialGate {
+  [appMessageLayer sendMessageWithID:MSG_ID_BT_END_GATE andPayload:nil];
+}
+
 - (BOOL)setPairingPin:(NSUInteger*)pinCode{
     if(![self connected]) {
         return FALSE;

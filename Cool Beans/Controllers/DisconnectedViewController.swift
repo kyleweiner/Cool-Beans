@@ -68,7 +68,7 @@ class DisconnectedViewController: UIViewController, PTDBeanManagerDelegate {
     }
 
     func beanManager(beanManager: PTDBeanManager!, didDiscoverBean bean: PTDBean!, error: NSError!) {
-        println("DISCOVERED BEAN \nName: \(bean.name), UUID: \(bean.identifier) RSSI: \(bean.RSSI)")
+        print("DISCOVERED BEAN \nName: \(bean.name), UUID: \(bean.identifier) RSSI: \(bean.RSSI)")
         if connectedBean == nil {
             if bean.state == .Discovered {
                 manager.connectToBean(bean, error: nil)
@@ -77,14 +77,14 @@ class DisconnectedViewController: UIViewController, PTDBeanManagerDelegate {
     }
 
     func BeanManager(beanManager: PTDBeanManager!, didConnectToBean bean: PTDBean!, error: NSError!) {
-        println("CONNECTED BEAN \nName: \(bean.name), UUID: \(bean.identifier) RSSI: \(bean.RSSI)")
+        print("CONNECTED BEAN \nName: \(bean.name), UUID: \(bean.identifier) RSSI: \(bean.RSSI)")
         if connectedBean == nil {
             connectedBean = bean
         }
     }
 
     func beanManager(beanManager: PTDBeanManager!, didDisconnectBean bean: PTDBean!, error: NSError!) {
-        println("DISCONNECTED BEAN \nName: \(bean.name), UUID: \(bean.identifier) RSSI: \(bean.RSSI)")
+        print("DISCONNECTED BEAN \nName: \(bean.name), UUID: \(bean.identifier) RSSI: \(bean.RSSI)")
 
         // Dismiss any modal view controllers.
         presentedViewController?.dismissViewControllerAnimated(true, completion: {

@@ -85,7 +85,7 @@ class ConnectedViewController: UIViewController, PTDBeanDelegate {
     func bean(bean: PTDBean!, didUpdateTemperature degrees_celsius: NSNumber!) {
         let newTemperature = Temperature(degreesCelcius: degrees_celsius.floatValue)
         if newTemperature.degreesCelcius != currentTemperature.degreesCelcius {
-            println("TEMPERATURE UPDATED \nOld: \(currentTemperature.degressFahrenheit)℉ \nNew: \(newTemperature.degressFahrenheit)℉")
+            print("TEMPERATURE UPDATED \nOld: \(currentTemperature.degressFahrenheit)℉ \nNew: \(newTemperature.degressFahrenheit)℉")
             currentTemperature = newTemperature
         }
     }

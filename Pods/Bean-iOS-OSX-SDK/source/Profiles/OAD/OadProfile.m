@@ -8,8 +8,6 @@
 
 #import "OadProfile.h"
 
-#import "CBPeripheral+isConnected_Universal.h"
-
 // OAD implementation based on http://processors.wiki.ti.com/images/8/82/OAD_for_CC254x.pdf
 
 // TODO:
@@ -102,7 +100,7 @@ typedef struct {
 
 - (BOOL)updateFirmwareWithImageAPath:(NSString*)imageAPath andImageBPath:(NSString*)imageBPath
 {
-    if (![peripheral isConnected_Universal]) {
+    if (peripheral.state != CBPeripheralStateConnected) {
         
         if ([self.delegate respondsToSelector:@selector(device:completedFirmwareUploadWithError:)]) {
             [self.delegate device:self completedFirmwareUploadWithError:[NSError errorWithDomain:ERROR_DOMAIN
@@ -242,7 +240,7 @@ typedef struct {
                 break;
                 
             default:
-                //PTDLog(@"Unexpected value update for Block characteristic in state %lu\n", self.oadState);
+                PTDLog(@"Unexpected value update for Block characteristic in state %tu\n", self.oadState);
                 break;
         }
     } else if ([characteristic isEqual:self.characteristicOADIdentify]) {
@@ -261,7 +259,7 @@ typedef struct {
                 break;
                 
             default:
-                //PTDLog(@"Unexpected value update for Identity characteristic in state %lu\n", self.oadState);
+                PTDLog(@"Unexpected value update for Identity characteristic in state %tu\n", self.oadState);
                 break;
         }
     }
@@ -401,6 +399,9 @@ typedef struct {
 {
     for (NSString *filename in @[self.imageAPath, self.imageBPath]) {
         NSData *data = [NSData dataWithContentsOfFile:filename];
+        if ( !data ) {
+            return NO;
+        }
         img_hdr_t *imageHeader = (img_hdr_t *)data.bytes;
         UInt16 imageVersion = CFSwapInt16LittleToHost(imageHeader->ver);
         if ((version & 0x01) != (imageVersion & 0x01)) {

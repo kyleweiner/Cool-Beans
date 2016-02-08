@@ -1,6 +1,5 @@
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Bean-iOS-OSX-SDK" $(SRCROOT)/../bean-apple-sdk/source/Public
+HEADER_SEARCH_PATHS = $(SRCROOT)/../bean-apple-sdk/source/Public $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Bean-iOS-OSX-SDK"
 OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/Bean-iOS-OSX-SDK"
-OTHER_LDFLAGS = -ObjC -l"Pods-Cool Beans-Bean-iOS-OSX-SDK" -framework "CoreBluetooth"
-OTHER_LIBTOOLFLAGS = $(OTHER_LDFLAGS)
+OTHER_LDFLAGS = $(inherited) -ObjC -l"Bean-iOS-OSX-SDK" -framework "CoreBluetooth"
 PODS_ROOT = ${SRCROOT}/Pods

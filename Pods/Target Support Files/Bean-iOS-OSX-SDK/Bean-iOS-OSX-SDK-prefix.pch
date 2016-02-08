@@ -2,5 +2,4 @@
 #import <UIKit/UIKit.h>
 #endif
 
-#import "Pods-Cool Beans-environment.h"
 #import "BEAN_Globals.h"

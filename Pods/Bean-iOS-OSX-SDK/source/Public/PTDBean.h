@@ -123,21 +123,21 @@ typedef struct {
  */
 typedef NS_ENUM(NSUInteger, PTDTxPower_dB) {
     /**
-     *  4db. Do this to maximize your tranmission strength.
+     *  -23db. Use this to maximize power savings.
      */
-    PTDTxPower_4dB = 0,
-    /**
-     *  0db. This is the default value.
-     */
-    PTDTxPower_0dB,
+    PTDTxPower_neg23dB = 0,
     /**
      *  -6db
      */
     PTDTxPower_neg6dB,
     /**
-     *  -23db. Use this to maximize power savings.
+     *  0db.
      */
-    PTDTxPower_neg23dB
+    PTDTxPower_0dB,
+    /**
+     *  4db. This is the default value and maximum transmission strength.
+     */
+    PTDTxPower_4dB
 };
 /**
  *  Advertising modes availabe to the Bean
@@ -325,10 +325,11 @@ typedef NS_ENUM(NSUInteger, PTDAdvertisingMode) {
  *  Cached representation of the Bean's battery or power supply voltage. Should call <readBatteryVoltage> first to ensure this data is fresh.
  */
 @property (nonatomic, readonly) NSNumber* batteryVoltage;
+
 /// @name Accessing LED colors
 /**
  *  Sets the Bean's RGB LED color
- *  @param color Color object which is used to set the Led
+ *  @param color Color object which is used to set the Led. iOS uses UIColor, while OS X uses NSColor.
  *  @see [PTDBeanDelegate bean:didUpdateLedColor:]
  */
 #if TARGET_OS_IPHONE
@@ -356,6 +357,10 @@ typedef NS_ENUM(NSUInteger, PTDAdvertisingMode) {
  *  @see [PTDBeanDelegate bean:serialDataReceived:]
  */
 -(void)sendSerialString:(NSString*)string;
+/**
+ Allows you to bypass the delay where serial data is not allowed to pass through the bean during early connection.
+ */
+- (void)releaseSerialGate;
 
 /// @name Accessing Acceleration Data
 /**

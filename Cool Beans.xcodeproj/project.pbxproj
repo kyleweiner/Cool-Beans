@@ -19,7 +19,7 @@
 		02D96FB41A16190B008CB5EE /* NumberLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D96FB31A16190B008CB5EE /* NumberLabel.swift */; };
 		02F74AE01A16F52B00E4DBB7 /* DisconnectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F74ADF1A16F52B00E4DBB7 /* DisconnectedViewController.swift */; };
 		02F74AE21A16F54600E4DBB7 /* ConnectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F74AE11A16F54600E4DBB7 /* ConnectedViewController.swift */; };
-		F6F766170DC03089EE95A3D6 /* libPods-Cool Beans.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17A1BBC4224A0E92FD7BE754 /* libPods-Cool Beans.a */; };
+		A85F47E17F7AC79799619E2B /* libPods-Cool Beans.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D90597272C565E546A83493 /* libPods-Cool Beans.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,9 +50,9 @@
 		02D96FB31A16190B008CB5EE /* NumberLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberLabel.swift; sourceTree = "<group>"; };
 		02F74ADF1A16F52B00E4DBB7 /* DisconnectedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisconnectedViewController.swift; sourceTree = "<group>"; };
 		02F74AE11A16F54600E4DBB7 /* ConnectedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectedViewController.swift; sourceTree = "<group>"; };
-		17A1BBC4224A0E92FD7BE754 /* libPods-Cool Beans.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Cool Beans.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		479240FFDBF77C40AE02328C /* Pods-Cool Beans.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cool Beans.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cool Beans/Pods-Cool Beans.debug.xcconfig"; sourceTree = "<group>"; };
-		754D10CDF1751A9F9197CCD4 /* Pods-Cool Beans.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cool Beans.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cool Beans/Pods-Cool Beans.release.xcconfig"; sourceTree = "<group>"; };
+		7AB2ADFAA4408268C081BF23 /* Pods-Cool Beans.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cool Beans.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cool Beans/Pods-Cool Beans.debug.xcconfig"; sourceTree = "<group>"; };
+		9D90597272C565E546A83493 /* libPods-Cool Beans.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Cool Beans.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E7F8DAA9C0AC016227A30C3 /* Pods-Cool Beans.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cool Beans.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cool Beans/Pods-Cool Beans.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6F766170DC03089EE95A3D6 /* libPods-Cool Beans.a in Frameworks */,
+				A85F47E17F7AC79799619E2B /* libPods-Cool Beans.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,8 +98,8 @@
 				02C48A3D1A141B4D0015956F /* Cool Beans */,
 				02C48A531A141B4D0015956F /* Cool BeansTests */,
 				02C48A3C1A141B4D0015956F /* Products */,
-				EB009C4D85AFEF35E1485CC8 /* Pods */,
-				7EF3025742B8DB76E430330F /* Frameworks */,
+				95E6F1F64CA309A14927A7AE /* Pods */,
+				D942AD6A77F389494EE2BBED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -163,21 +163,21 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		7EF3025742B8DB76E430330F /* Frameworks */ = {
+		95E6F1F64CA309A14927A7AE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				17A1BBC4224A0E92FD7BE754 /* libPods-Cool Beans.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		EB009C4D85AFEF35E1485CC8 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				479240FFDBF77C40AE02328C /* Pods-Cool Beans.debug.xcconfig */,
-				754D10CDF1751A9F9197CCD4 /* Pods-Cool Beans.release.xcconfig */,
+				7AB2ADFAA4408268C081BF23 /* Pods-Cool Beans.debug.xcconfig */,
+				9E7F8DAA9C0AC016227A30C3 /* Pods-Cool Beans.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		D942AD6A77F389494EE2BBED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D90597272C565E546A83493 /* libPods-Cool Beans.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,11 +187,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 02C48A5A1A141B4D0015956F /* Build configuration list for PBXNativeTarget "Cool Beans" */;
 			buildPhases = (
-				4A5999DC4D4D3DE31BFD037E /* Check Pods Manifest.lock */,
+				58CA0D3BA75FB1E4100F4BAB /* Check Pods Manifest.lock */,
 				02C48A371A141B4D0015956F /* Sources */,
 				02C48A381A141B4D0015956F /* Frameworks */,
 				02C48A391A141B4D0015956F /* Resources */,
-				85333A64098D240CD6EBB165 /* Copy Pods Resources */,
+				311ED19D48276578101966BB /* Embed Pods Frameworks */,
+				34DD2550A265FC7DBBDF3C4E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -226,7 +227,9 @@
 		02C48A331A141B4D0015956F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastSwiftMigration = 0720;
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Kyle Weiner";
 				TargetAttributes = {
 					02C48A3A1A141B4D0015956F = {
@@ -279,22 +282,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4A5999DC4D4D3DE31BFD037E /* Check Pods Manifest.lock */ = {
+		311ED19D48276578101966BB /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cool Beans/Pods-Cool Beans-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		85333A64098D240CD6EBB165 /* Copy Pods Resources */ = {
+		34DD2550A265FC7DBBDF3C4E /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -307,6 +310,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cool Beans/Pods-Cool Beans-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58CA0D3BA75FB1E4100F4BAB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -384,6 +402,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -445,11 +464,12 @@
 		};
 		02C48A5B1A141B4D0015956F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 479240FFDBF77C40AE02328C /* Pods-Cool Beans.debug.xcconfig */;
+			baseConfigurationReference = 7AB2ADFAA4408268C081BF23 /* Pods-Cool Beans.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Cool Beans/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kyleweiner.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Cool Beans/Bridging-Header.h";
 			};
@@ -457,11 +477,12 @@
 		};
 		02C48A5C1A141B4D0015956F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 754D10CDF1751A9F9197CCD4 /* Pods-Cool Beans.release.xcconfig */;
+			baseConfigurationReference = 9E7F8DAA9C0AC016227A30C3 /* Pods-Cool Beans.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Cool Beans/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kyleweiner.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Cool Beans/Bridging-Header.h";
 			};
@@ -481,6 +502,7 @@
 				);
 				INFOPLIST_FILE = "Cool BeansTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kyleweiner.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cool Beans.app/Cool Beans";
 			};
@@ -496,6 +518,7 @@
 				);
 				INFOPLIST_FILE = "Cool BeansTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kyleweiner.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cool Beans.app/Cool Beans";
 			};
