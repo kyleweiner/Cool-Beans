@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6249" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6243"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -67,7 +68,7 @@
                                     <constraint firstItem="DSY-Wp-G3O" firstAttribute="leading" secondItem="d0k-UW-wt0" secondAttribute="leading" id="yKC-S8-0yh"/>
                                 </constraints>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XhJ-hs-u7c">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XhJ-hs-u7c">
                                 <rect key="frame" x="20" y="558" width="22" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="Pef-Hu-wCR"/>
@@ -174,10 +175,10 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="30Y-eW-j5I" firstAttribute="leading" secondItem="l7n-MS-Wmp" secondAttribute="leadingMargin" constant="-16" id="7RK-WG-EBg"/>
-                            <constraint firstItem="30Y-eW-j5I" firstAttribute="top" secondItem="BgD-Tz-VbY" secondAttribute="bottom" id="K01-r0-WNU"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="30Y-eW-j5I" secondAttribute="trailing" constant="-16" id="ZWA-25-dIo"/>
-                            <constraint firstItem="aoC-yY-2TO" firstAttribute="top" secondItem="30Y-eW-j5I" secondAttribute="bottom" id="caD-D8-twJ"/>
+                            <constraint firstItem="30Y-eW-j5I" firstAttribute="centerX" secondItem="l7n-MS-Wmp" secondAttribute="centerX" id="HOH-U6-gCj"/>
+                            <constraint firstItem="30Y-eW-j5I" firstAttribute="width" secondItem="l7n-MS-Wmp" secondAttribute="width" id="Hsy-7O-hCN"/>
+                            <constraint firstItem="30Y-eW-j5I" firstAttribute="centerY" secondItem="l7n-MS-Wmp" secondAttribute="centerY" id="SFX-Ql-jOS"/>
+                            <constraint firstItem="30Y-eW-j5I" firstAttribute="height" secondItem="l7n-MS-Wmp" secondAttribute="height" id="zO3-Hj-L3B"/>
                         </constraints>
                     </view>
                     <toolbarItems/>

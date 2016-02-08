@@ -1,25 +1,23 @@
 //
 //  TemperatureView.swift
-//  Cool Beans
-//
 //  Created by Kyle on 11/14/14.
-//  Copyright (c) 2014 Kyle Weiner. All rights reserved.
 //
 
 import UIKit
 
 class TemperatureView: UIView {
-
     @IBOutlet var containerView: UIView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var temperatureLabel: UILabel!
 
-    // MARK: Lifecycle
+    // MARK: - Lifecycle
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        let bundle = NSBundle(forClass: self.dynamicType)
-        self.addSubview(bundle.loadNibNamed("TemperatureView", owner: self, options: nil)[0] as! UIView)
-    }
 
+        let nib = UINib(nibName: "\(self.dynamicType)", bundle: nil)
+        if let view = nib.instantiateWithOwner(self, options: nil).first as? UIView {
+            addSubview(view)
+        }
+    }
 }

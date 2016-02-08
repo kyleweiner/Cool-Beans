@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		022D08B21A1773E50009D9A5 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022D08B11A1773E50009D9A5 /* InfoViewController.swift */; };
-		02C27BF01A14927F00685D31 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C27BEF1A14927F00685D31 /* CustomColors.swift */; };
+		02C27BF01A14927F00685D31 /* UIColor+CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C27BEF1A14927F00685D31 /* UIColor+CustomColors.swift */; };
 		02C27BF71A15B97100685D31 /* TemperatureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02C27BF61A15B97100685D31 /* TemperatureView.xib */; };
 		02C27BF91A15C4DE00685D31 /* TemperatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C27BF81A15C4DE00685D31 /* TemperatureView.swift */; };
 		02C48A411A141B4D0015956F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C48A401A141B4D0015956F /* AppDelegate.swift */; };
@@ -35,7 +35,7 @@
 /* Begin PBXFileReference section */
 		022D08B11A1773E50009D9A5 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		02C27BEB1A14875200685D31 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
-		02C27BEF1A14927F00685D31 /* CustomColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
+		02C27BEF1A14927F00685D31 /* UIColor+CustomColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+CustomColors.swift"; sourceTree = "<group>"; };
 		02C27BF61A15B97100685D31 /* TemperatureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TemperatureView.xib; sourceTree = "<group>"; };
 		02C27BF81A15C4DE00685D31 /* TemperatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureView.swift; sourceTree = "<group>"; };
 		02C48A3B1A141B4D0015956F /* Cool Beans.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cool Beans.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,7 +77,7 @@
 		02C27BEE1A14927F00685D31 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				02C27BEF1A14927F00685D31 /* CustomColors.swift */,
+				02C27BEF1A14927F00685D31 /* UIColor+CustomColors.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -335,7 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				02F74AE21A16F54600E4DBB7 /* ConnectedViewController.swift in Sources */,
-				02C27BF01A14927F00685D31 /* CustomColors.swift in Sources */,
+				02C27BF01A14927F00685D31 /* UIColor+CustomColors.swift in Sources */,
 				02D96FB41A16190B008CB5EE /* NumberLabel.swift in Sources */,
 				022D08B21A1773E50009D9A5 /* InfoViewController.swift in Sources */,
 				02C27BF91A15C4DE00685D31 /* TemperatureView.swift in Sources */,

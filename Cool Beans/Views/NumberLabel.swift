@@ -1,17 +1,21 @@
 //
 //  NumberLabel.swift
-//  Cool Beans
-//
 //  Created by Kyle on 11/14/14.
-//  Copyright (c) 2014 Kyle Weiner. All rights reserved.
 //
 
 import UIKit
 
 class NumberLabel: UILabel {
-
     override func awakeFromNib() {
-        let descriptor = font.fontDescriptor().fontDescriptorByAddingAttributes([
+        super.awakeFromNib()
+
+        font = UIFont(descriptor: font.fontDescriptor().numberDescriptor(), size: 0)
+    }
+}
+
+extension UIFontDescriptor {
+    func numberDescriptor() -> UIFontDescriptor {
+        return fontDescriptorByAddingAttributes([
             UIFontDescriptorFeatureSettingsAttribute: [
                 [
                     UIFontFeatureTypeIdentifierKey: kNumberSpacingType,
@@ -23,7 +27,5 @@ class NumberLabel: UILabel {
                 ]
             ]
         ])
-        font = UIFont(descriptor: descriptor, size: 0.0)
     }
-    
 }
