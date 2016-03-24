@@ -54,31 +54,37 @@ extension DisconnectedViewController: PTDBeanManagerDelegate {
     }
 
     func beanManager(beanManager: PTDBeanManager!, didDiscoverBean bean: PTDBean!, error: NSError!) {
-        print("DISCOVERED BEAN \nName: \(bean.name), UUID: \(bean.identifier) RSSI: \(bean.RSSI)")
-
         if connectedBean == nil {
             if bean.state == .Discovered {
                 manager.connectToBean(bean, error: nil)
             }
         }
+
+        #if DEBUG
+            print("DISCOVERED BEAN \nName: \(bean.name), UUID: \(bean.identifier) RSSI: \(bean.RSSI)")
+        #endif
     }
 
     func BeanManager(beanManager: PTDBeanManager!, didConnectToBean bean: PTDBean!, error: NSError!) {
-        print("CONNECTED BEAN \nName: \(bean.name), UUID: \(bean.identifier) RSSI: \(bean.RSSI)")
-
         if connectedBean == nil {
             connectedBean = bean
         }
+
+        #if DEBUG
+            print("CONNECTED BEAN \nName: \(bean.name), UUID: \(bean.identifier) RSSI: \(bean.RSSI)")
+        #endif
     }
 
     func beanManager(beanManager: PTDBeanManager!, didDisconnectBean bean: PTDBean!, error: NSError!) {
-        print("DISCONNECTED BEAN \nName: \(bean.name), UUID: \(bean.identifier) RSSI: \(bean.RSSI)")
-
         // Dismiss any modal view controllers.
         presentedViewController?.dismissViewControllerAnimated(true, completion: {
             self.dismissViewControllerAnimated(true, completion: nil)
         })
-        
-        self.connectedBean = nil
+
+        connectedBean = nil
+
+        #if DEBUG
+            print("DISCONNECTED BEAN \nName: \(bean.name), UUID: \(bean.identifier) RSSI: \(bean.RSSI)")
+        #endif
     }
 }

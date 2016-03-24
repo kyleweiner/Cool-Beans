@@ -104,9 +104,11 @@ extension ConnectedViewController: PTDBeanDelegate {
         let newTemperature = Temperature(degreesCelcius: degrees_celsius.floatValue)
 
         if newTemperature.degreesCelcius != currentTemperature.degreesCelcius {
-            print("TEMPERATURE UPDATED \nOld: \(currentTemperature.degressFahrenheit)℉ \nNew: \(newTemperature.degressFahrenheit)℉")
-            
             currentTemperature = newTemperature
+
+            #if DEBUG
+                print("TEMPERATURE UPDATED \nOld: \(currentTemperature.degressFahrenheit)℉ \nNew: \(newTemperature.degressFahrenheit)℉")
+            #endif
         }
     }
 }
