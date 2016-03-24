@@ -19,6 +19,7 @@
 		02D96FB41A16190B008CB5EE /* NumberLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D96FB31A16190B008CB5EE /* NumberLabel.swift */; };
 		02F74AE01A16F52B00E4DBB7 /* DisconnectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F74ADF1A16F52B00E4DBB7 /* DisconnectedViewController.swift */; };
 		02F74AE21A16F54600E4DBB7 /* ConnectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F74AE11A16F54600E4DBB7 /* ConnectedViewController.swift */; };
+		2723A1AD1CA39C2D003459E3 /* UIFontDescriptor+NumberDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2723A1AC1CA39C2D003459E3 /* UIFontDescriptor+NumberDescriptor.swift */; };
 		A85F47E17F7AC79799619E2B /* libPods-Cool Beans.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D90597272C565E546A83493 /* libPods-Cool Beans.a */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		02D96FB31A16190B008CB5EE /* NumberLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberLabel.swift; sourceTree = "<group>"; };
 		02F74ADF1A16F52B00E4DBB7 /* DisconnectedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisconnectedViewController.swift; sourceTree = "<group>"; };
 		02F74AE11A16F54600E4DBB7 /* ConnectedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectedViewController.swift; sourceTree = "<group>"; };
+		2723A1AC1CA39C2D003459E3 /* UIFontDescriptor+NumberDescriptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFontDescriptor+NumberDescriptor.swift"; sourceTree = "<group>"; };
 		7AB2ADFAA4408268C081BF23 /* Pods-Cool Beans.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cool Beans.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cool Beans/Pods-Cool Beans.debug.xcconfig"; sourceTree = "<group>"; };
 		9D90597272C565E546A83493 /* libPods-Cool Beans.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Cool Beans.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E7F8DAA9C0AC016227A30C3 /* Pods-Cool Beans.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cool Beans.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cool Beans/Pods-Cool Beans.release.xcconfig"; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				02C27BEF1A14927F00685D31 /* UIColor+CustomColors.swift */,
+				2723A1AC1CA39C2D003459E3 /* UIFontDescriptor+NumberDescriptor.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				02F74AE21A16F54600E4DBB7 /* ConnectedViewController.swift in Sources */,
+				2723A1AD1CA39C2D003459E3 /* UIFontDescriptor+NumberDescriptor.swift in Sources */,
 				02C27BF01A14927F00685D31 /* UIColor+CustomColors.swift in Sources */,
 				02D96FB41A16190B008CB5EE /* NumberLabel.swift in Sources */,
 				022D08B21A1773E50009D9A5 /* InfoViewController.swift in Sources */,

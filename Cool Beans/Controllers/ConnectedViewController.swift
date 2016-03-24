@@ -89,7 +89,7 @@ class ConnectedViewController: UIViewController {
         UIView.animateWithDuration(0.4, animations: { [unowned self] in
             self.scrollView.backgroundColor = backgroundColor
             self.temperatureView.containerView.backgroundColor = backgroundColor
-            })
+        })
     }
 
     func updateBean() {

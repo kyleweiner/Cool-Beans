@@ -6,6 +6,8 @@
 import UIKit
 
 class DisconnectedViewController: UIViewController {
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+
     let connectedViewControllerSegueIdentifier = "ViewConnection"
 
     private var manager: PTDBeanManager!
@@ -15,8 +17,6 @@ class DisconnectedViewController: UIViewController {
             connectedBean == nil ? beanManagerDidUpdateState(manager) : performSegueWithIdentifier(connectedViewControllerSegueIdentifier, sender: self)
         }
     }
-
-    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
 
     // MARK: - Lifecycle
 
@@ -77,9 +77,9 @@ extension DisconnectedViewController: PTDBeanManagerDelegate {
 
     func beanManager(beanManager: PTDBeanManager!, didDisconnectBean bean: PTDBean!, error: NSError!) {
         // Dismiss any modal view controllers.
-        presentedViewController?.dismissViewControllerAnimated(true, completion: {
+        presentedViewController?.dismissViewControllerAnimated(true) {
             self.dismissViewControllerAnimated(true, completion: nil)
-        })
+        }
 
         connectedBean = nil
 

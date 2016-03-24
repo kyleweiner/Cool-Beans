@@ -12,20 +12,3 @@ class NumberLabel: UILabel {
         font = UIFont(descriptor: font.fontDescriptor().numberDescriptor(), size: 0)
     }
 }
-
-extension UIFontDescriptor {
-    func numberDescriptor() -> UIFontDescriptor {
-        return fontDescriptorByAddingAttributes([
-            UIFontDescriptorFeatureSettingsAttribute: [
-                [
-                    UIFontFeatureTypeIdentifierKey: kNumberSpacingType,
-                    UIFontFeatureSelectorIdentifierKey: kProportionalNumbersSelector
-                ],
-                [
-                    UIFontFeatureTypeIdentifierKey: kCharacterAlternativesType,
-                    UIFontFeatureSelectorIdentifierKey: 1
-                ]
-            ]
-        ])
-    }
-}
