@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -68,8 +68,8 @@
                                     <constraint firstItem="DSY-Wp-G3O" firstAttribute="leading" secondItem="d0k-UW-wt0" secondAttribute="leading" id="yKC-S8-0yh"/>
                                 </constraints>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XhJ-hs-u7c">
-                                <rect key="frame" x="20" y="558" width="22" height="22"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XhJ-hs-u7c">
+                                <rect key="frame" x="554" y="558" width="22" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="Pef-Hu-wCR"/>
                                     <constraint firstAttribute="width" constant="22" id="ZYz-Ex-RRI"/>
@@ -85,11 +85,11 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="XhJ-hs-u7c" firstAttribute="leading" secondItem="lFE-gl-KQ8" secondAttribute="leadingMargin" constant="4" id="04B-6P-nLH"/>
                             <constraint firstItem="d0k-UW-wt0" firstAttribute="bottom" secondItem="yhX-3Z-Yib" secondAttribute="top" id="Cpu-Ob-C0Z"/>
                             <constraint firstAttribute="trailing" secondItem="d0k-UW-wt0" secondAttribute="trailing" id="IEZ-YM-j2m"/>
                             <constraint firstItem="d0k-UW-wt0" firstAttribute="leading" secondItem="lFE-gl-KQ8" secondAttribute="leading" id="MkT-zr-LEm"/>
                             <constraint firstItem="yhX-3Z-Yib" firstAttribute="top" secondItem="XhJ-hs-u7c" secondAttribute="bottom" constant="20" id="SMT-GV-3pc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XhJ-hs-u7c" secondAttribute="trailing" constant="4" id="p0E-s3-gQK"/>
                             <constraint firstItem="d0k-UW-wt0" firstAttribute="top" secondItem="b25-tt-3N6" secondAttribute="bottom" id="vdL-rN-6sE"/>
                         </constraints>
                     </view>
@@ -148,7 +148,7 @@
                                                 <constraint firstAttribute="height" constant="67" id="J0m-Qy-wL2"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="48"/>
-                                            <state key="normal" title="git.io/Xi6unA">
+                                            <state key="normal" title="Cool Beans">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>

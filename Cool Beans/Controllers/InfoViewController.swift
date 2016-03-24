@@ -7,7 +7,7 @@ import UIKit
 
 class InfoViewController: UIViewController {
     @IBAction func openURL(sender: AnyObject) {
-        let url = NSURL(string: "http://git.io/Xi6unA")
+        let url = NSURL(string: "https://goo.gl/mAIzHw")
         UIApplication.sharedApplication().openURL(url!)
     }
 
