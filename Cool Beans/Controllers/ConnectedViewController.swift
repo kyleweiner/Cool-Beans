@@ -51,7 +51,7 @@ class ConnectedViewController: UIViewController {
         temperatureView.nameLabel.text = connectedBean?.name ?? "Unknown"
 
         // Add pull-to-refresh control.
-        refreshControl.addTarget(self, action: "didPullToRefresh:", forControlEvents: .ValueChanged)
+        refreshControl.addTarget(self, action: #selector(didPullToRefresh(_:)), forControlEvents: .ValueChanged)
         refreshControl.tintColor = .whiteColor()
         scrollView.addSubview(refreshControl)
     }
